@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义属性-->
+  <declare-styleable name="HeartLayout">
+      <attr name="heart_width" format="integer" />
+      <attr name="heart_height" format="integer" />
+      <attr name="heart_image_resId" format="reference" />
+  </declare-styleable>
+
+</resources>
