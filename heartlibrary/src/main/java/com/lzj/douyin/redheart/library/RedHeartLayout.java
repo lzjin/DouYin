@@ -25,7 +25,13 @@ public class RedHeartLayout extends RelativeLayout {
     private int mWidth=120; //默认图片宽
     private int mHeight=120;//默认图片高
 
-
+    /**
+     * dp 转 px
+     */
+    public  int dip2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
     /**
      * new 使用
      * @param context
@@ -200,12 +206,6 @@ public class RedHeartLayout extends RelativeLayout {
         return rotation;
     }
 
-    /**
-     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
-     */
-    public  int dip2px(Context context, float dpValue) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dpValue * scale + 0.5f);
-    }
+
 }
 
